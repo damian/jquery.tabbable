@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Tabbable Test Suite</title>
+  <!-- Load local jQuery, removing access to $ (use jQuery, not $). -->
+  <script src="../libs/jquery/jquery.js"></script>
+  <script>jQuery.noConflict()</script>
+  <!-- Load local QUnit (grunt requires v1.0.0 or newer). -->
+  <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
+  <script src="../libs/qunit/qunit.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="../src/jquery.tabbable.js"></script>
+  <script src="jquery.tabbable_test.js"></script>
+</head>
+<body>
+  <h1 id="qunit-header">jQuery Tabbable Test Suite</h1>
+  <h2 id="qunit-banner"></h2>
+  <div id="qunit-testrunner-toolbar"></div>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+  <div id="qunit-fixture">
+    <form>
+      <input type="text" name="foo" />
+      <textarea name="foo"></textarea>
+      <button>Test</button>
+      <a href="#foo">awesome test markup</a>
+      <a>awesome test markup</a>
+      <button style="display:none;">Test</button>
+  </form>
+  </div>
+</body>
+</html>
