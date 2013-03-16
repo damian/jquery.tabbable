@@ -1,8 +1,8 @@
 {
-  "name": "jquery.tabbable",
+  "name": "tabbable",
   "title": "jQuery Tabbable",
   "description": "Augments jQuery with a `:tabbable` selector to retrieve all tabbable elements e.g. button, input, a, textarea.",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "homepage": "https://github.com/damian/jquery.tabbable",
   "author": {
     "name": "Damian Nicholson",
