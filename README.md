@@ -37,11 +37,13 @@ jQuery(function($) {
 This is generated using YUIDoc and can be found in the **docs** folder.
 
 ## Examples
+```javascript
 $(function() {
     $('form').find(':tabbable');
 
     $('form').find(':input').filter(':tabbable');
 });
+```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/cowboy/grunt).
