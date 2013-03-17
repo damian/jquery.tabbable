@@ -1,0 +1,124 @@
+{
+    "project": {
+        "name": "jquery.tabbable",
+        "description": "Augments jQuery with a `:tabbable` selector to retrieve all tabbable elements e.g. button, input, a, textarea.",
+        "version": "0.1.0",
+        "url": "https://github.com/damian/jquery.tabbable"
+    },
+    "files": {
+        "src/jquery.tabbable.js": {
+            "name": "src/jquery.tabbable.js",
+            "modules": {},
+            "classes": {
+                "Subject": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Subject": {
+            "name": "Subject",
+            "shortname": "Subject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/jquery.tabbable.js",
+            "line": 10,
+            "description": "A collection of functions to determine if an element is tabbable",
+            "static": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/jquery.tabbable.js",
+            "line": 18,
+            "description": "Contains a list of focussable elements",
+            "itemtype": "property",
+            "name": "FOCUSSABLE_ELEMS",
+            "type": "Array",
+            "static": 1,
+            "final": 1,
+            "class": "Subject"
+        },
+        {
+            "file": "src/jquery.tabbable.js",
+            "line": 33,
+            "description": "Determines if the DOMNode is tabbable",
+            "itemtype": "method",
+            "name": "isTabbable",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "The DOMNode under question",
+                    "type": "Node"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Subject"
+        },
+        {
+            "file": "src/jquery.tabbable.js",
+            "line": 44,
+            "itemtype": "method",
+            "name": "hasTabindex",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "The DOMNode under question",
+                    "type": "Node"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Subject"
+        },
+        {
+            "file": "src/jquery.tabbable.js",
+            "line": 53,
+            "itemtype": "method",
+            "name": "isVisible",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "The DOMNode under question",
+                    "type": "Node"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Subject"
+        },
+        {
+            "file": "src/jquery.tabbable.js",
+            "line": 62,
+            "itemtype": "method",
+            "name": "isFocussable",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "The DOMNode under question",
+                    "type": "Node"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Subject"
+        }
+    ],
+    "warnings": []
+}

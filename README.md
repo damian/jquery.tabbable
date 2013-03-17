@@ -1,6 +1,6 @@
 # jQuery Tabbable
 
-The best jQuery plugin ever.
+Augments jQuery with a `:tabbable` selector to retrieve all tabbable elements within a given context.
 
 ## Getting Started
 Download the [production version][min] or the [development version][max].
@@ -11,15 +11,6 @@ Download the [production version][min] or the [development version][max].
 In your web page:
 
 ```html
-<script src="jquery.js"></script>
-<script src="dist/jquery.tabbable.min.js"></script>
-<script>
-jQuery(function($) {
-  // Returns all tabbable elements
-  $('form').find(':tabbable'); // [ 'input', 'input', 'a[href]', 'button' ]
-});
-</script>
-
 <form>
   <label>Name</label>
   <input type="text" name="name" />
@@ -31,13 +22,26 @@ jQuery(function($) {
   <a href="/">Cancel</a>
   <button>Submit</button>
 </form>
+
+<script src="jquery.js"></script>
+<script src="dist/jquery.tabbable.min.js"></script>
+<script>
+jQuery(function($) {
+  // Returns all tabbable elements
+  $('form').find(':tabbable'); // [ 'input', 'input', 'a[href]', 'button' ]
+});
+</script>
 ```
 
 ## Documentation
-_(Coming soon)_
+This is generated using YUIDoc and can be found in the **docs** folder.
 
 ## Examples
-_(Coming soon)_
+$(function() {
+    $('form').find(':tabbable');
+
+    $('form').find(':input').filter(':tabbable');
+});
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/cowboy/grunt).
@@ -45,7 +49,9 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _Also, please don't edit files in the "dist" subdirectory as they are generated via grunt. You'll find source code in the "src" subdirectory!_
 
 ## Release History
-_(Nothing yet)_
+* 0.0.3 - Upgraded to Grunt 0.4.x. Also added YUIDoc to serve the documentation
+* 0.0.2 - Updated the project with documentation and added it to plugins.jquery.com
+* 0.0.1 - Set up the original project using Grunt 0.3.x
 
 ## License
 Copyright (c) 2013 Damian Nicholson  
